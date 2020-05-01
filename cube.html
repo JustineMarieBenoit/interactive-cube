@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cube.css">
+    <title>Interactive Cube</title>
+</head>
+<body>
+    <div class="wrapper">
+        <section class="row-a">
+            <span id="tile-a" class="diamond" onclick="changeColor('tile-a')"></span>
+        </section>
+        <section class="row-b">
+            <span id="tile-b" class="diamond" onclick="changeColor('tile-b')"></span>
+            <span id="tile-c" class="diamond" onclick="changeColor('tile-c')"></span>
+        </section>
+        <section class="row-c">
+            <span id="tile-d" class="triangle-left" onclick="changeColor('tile-d')"></span>
+            <span class="diamond"></span>
+            <span id="tile-e" class="triangle-right" onclick="changeColor('tile-e')"></span>
+        </section>
+        <section class="row-d">
+            <span id="tile-f" class="diamond" onclick="changeColor('tile-f')"></span>
+            <span id="tile-g" class="diamond" onclick="changeColor('tile-g')"></span>
+        </section>
+        <section class="row-e">
+            <span id="tile-h" class="triangle-left" onclick="changeColor('tile-h')"></span>
+            <span class="diamond"></span>
+            <span id="tile-i" class="triangle-right" onclick="changeColor('tile-i')"></span>
+        </section>
+        <section class="row-f">
+            <span id="tile-j" class="diamond" onclick="changeColor('tile-j')"></span>
+            <span id="tile-k" class="diamond" onclick="changeColor('tile-k')"></span>
+        </section>
+        <section class="row-g">
+            <span id="tile-l" class="diamond" onclick="changeColor('tile-l')"></span>
+        </section>
+    </div>
+    <script>
+        const changeColor = id => {
+            const tile = document.getElementById(id)
+            tile.classList.toggle('toggle')
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom, #73eedc, #59d6e1, #5bbcdb, #6aa1c9, #7687af, #76769d, #75658a, #715575, #6d4767, #693858, #652a48, #5f1a37);
+}
+.wrapper {
+    display: block;
+    margin-top: 20vh;
+}
+/* Tile layout */
+.row-a,
+.row-b,
+.row-c,
+.row-d,
+.row-e,
+.row-f,
+.row-g {
+    display: grid;
+    justify-content: center;
+    position: relative;
+}
+.row-b,
+.row-d,
+.row-f {
+    grid-template-columns: repeat(2, 200px);
+}
+.row-c,
+.row-e {
+    grid-template-columns: repeat(3, 200px);
+}
+.row-b {
+    top: -50px;
+}
+
+.row-c {
+    top: -100px;
+}
+
+.row-d {
+    top: -150px;
+}
+
+.row-e {
+    top: -200px;
+}
+
+.row-f {
+    top: -250px;
+}
+
+.row-g {
+    top: -300px;
+}
+
+.row-a:hover,
+.row-b:hover,
+.row-c:hover,
+.row-d:hover,
+.row-e:hover,
+.row-f:hover,
+.row-g:hover {
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    z-index: 10;
+}
+
+/* Tile size */
+.diamond,
+.triangle-left,
+.triangle-right {
+    height: 100px;
+    width: 200px;
+}
+/* Tile hover effect */
+.diamond:hover,
+.triangle-left:hover,
+.triangle-right:hover {
+    cursor: pointer;
+}
+/* Tile shape */
+.diamond {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.triangle-left {
+    clip-path: polygon(50% 0%, 50% 100%, 100% 50%);
+}
+
+.triangle-right {
+    clip-path: polygon(50% 0, 0 50%, 50% 100%);
+}
+
+/* Base color */
+#tile-a.diamond {
+    background-color: #6fffe9;
+}
+
+#tile-b.diamond,
+#tile-c.diamond {
+    background-color: #5bc0be;
+}
+
+#tile-d.triangle-left,
+#tile-e.triangle-right {
+    background-color: #007372;
+}
+
+#tile-f.diamond,
+#tile-g.diamond {
+    background-color: #3a506b;
+}
+
+#tile-h.triangle-left,
+#tile-i.triangle-right {
+    background-color: #3d4756;
+}
+
+#tile-j.diamond,
+#tile-k.diamond {
+    background-color: #1c2541;
+}
+
+#tile-l.diamond {
+    background-color: #0b132b;
+}
+/* Toggle color */
+#tile-a.diamond.toggle {
+    background-color: #FFCA80;
+}
+
+#tile-b.diamond.toggle,
+#tile-c.diamond.toggle {
+    background-color: #FF7F51;
+}
+
+#tile-d.triangle-left.toggle,
+#tile-e.triangle-right.toggle {
+    background-color: #D55B30;
+}
+
+#tile-f.diamond.toggle,
+#tile-g.diamond.toggle {
+    background-color: #CE4257;
+}
+
+#tile-h.triangle-left.toggle,
+#tile-i.triangle-right.toggle {
+    background-color: #8B0026;
+}
+
+#tile-j.diamond.toggle,
+#tile-k.diamond.toggle {
+    background-color: #720026;
+}
+
+#tile-l.diamond.toggle {
+    background-color: #4F000B;
+}
+
