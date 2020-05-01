@@ -69,6 +69,7 @@ body {
 .triangle-right {
     height: 100px;
     width: 200px;
+    transition: all 0.3s ease-in;
 }
 /* Tile hover effect */
 .diamond:hover,
